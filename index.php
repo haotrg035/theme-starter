@@ -1,3 +1,3 @@
-<?php include_once "./_header.php"; ?>
-hellow
-<?php include_once "./_footer.php"; ?>
+<?php include_once "./header.php"; ?>
+hello
+<?php include_once "./footer.php"; ?>
