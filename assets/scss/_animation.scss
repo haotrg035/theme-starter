@@ -1,0 +1,123 @@
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(3600deg);
+        -moz-transform: rotate(3600deg);
+        -ms-transform: rotate(3600deg);
+        -o-transform: rotate(3600deg);
+        transform: rotate(3600deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(1800deg);
+        -moz-transform: rotate(1800deg);
+        -ms-transform: rotate(1800deg);
+        -o-transform: rotate(1800deg);
+        transform: rotate(1800deg);
+    }
+}
+
+.rotate {
+    -webkit-animation-name: rotate;
+    -moz-animation-name: rotate;
+    -o-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate-out-up-left {
+    0% {
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        opacity: 1
+    }
+    to {
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        opacity: 1
+    }
+}
+
+@keyframes rotate-out-up-left {
+    0% {
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        opacity: 1
+    }
+    to {
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        opacity: 1;
+    }
+}
+
+.rotate-out-up-left {
+    -webkit-animation-name: rotate-out-up-left;
+    animation-name: rotate-out-up-left;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotate-out-up-right {
+    0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        opacity: 1
+    }
+    to {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        opacity: 1
+    }
+}
+
+@keyframes rotate-out-up-right {
+    0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        opacity: 1
+    }
+    to {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+        opacity: 1;
+    }
+}
+
+.rotate-out-up-right {
+    -webkit-animation-name: rotate-out-up-right;
+    animation-name: rotate-out-up-right;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
